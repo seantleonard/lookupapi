@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="radioTool">
+<head>
+	<title>Phone and Tuner Lookup Tool</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./styles/style.css">
+	<script src="./parse-1.6.7.min.js"></script>
+
+	<!-- <link rel="stylesheet" href="main.css"> -->
+</head>
+<body>
+
+<div class="container">
+	<div class="page-header">
+		<h1>Number and Frequency Lookup API</h1>
+	</div>
+
+
+	<div ng-view></div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+<script src="main.js"></script>
+<script src="controllers/StationTool.js"></script>
+<script src="services/contests.js"></script>
+<script src="services/station.js"></script>
+<script src="services/pastlookups.js"></script>
+<script>
+Parse.initialize("iPC7uO2qejs6r0eh1hE7oeRB1NHH68wd7wsOSqUk", "3ZswgBdSWXxsQL3CJ0THE0hfCH7pzUpZrfPB036U");
+
+</script>
+
+</body>
+</html>

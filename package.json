@@ -1,0 +1,10 @@
+{
+    "dependencies" : {
+      "express"    : "latest",
+      "request"    : "latest",
+      "cheerio"    : "latest",
+      "qs"         : "^5.2.0",
+      "q"          : "latest",
+      "twilio"     : "latest"
+    }
+}

@@ -1,0 +1,111 @@
+
+<form  id="form-num-lookup" class="form-inline" ng-submit="vm.phoneNumberLookup()">
+  <div class="form-group">
+    <div class="input-group">
+      <input type="search" ng-model="vm.phoneNumber" class="form-control" placeholder="18005804123">
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Lookup Number</button>
+</form>
+
+<div id="row-num-lookup" class="row">
+
+    <div  class="col-md-12">
+        <h4>Lookups</h4>
+        <div>
+            <p ng-if="vm.previousSearches.length==0">No previous lookups</p>
+
+            <div ng-repeat="phoneNumber in vm.previousSearches">
+                <div class="col-md-4">
+                    <h3>{{phoneNumber.display_num}}</h3>
+                </div>
+                <div class="col-md-4">
+                    <h3>{{phoneNumber.carrier}}</h3>
+                </div>
+                <div class="col-md-4">
+                    <h3>{{phoneNumber.type}}</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+<div style="height:20px;background-color:#D9F0F1">
+</div>
+
+<form id="form-station-lookup" class="form-inline" ng-submit="vm.stationLookup()">
+  <div class="form-group">
+    <div class="input-group">
+      <input type="search" ng-model="vm.stationDial" class="form-control" placeholder="106.7">
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Lookup Station</button>
+</form>
+
+<div id="row-station-lookup" class="row">
+
+    <p ng-if="vm.radioStationData.length==0">No data to show</p>
+
+    <div ng-repeat="station in vm.radioStationData">
+
+        <div class="col-md-2" >
+            <img style="height:150px;width:150px" ng-src= {{station.logo}}></img>
+        </div>
+            <div class="col-md-4">
+                <h1>{{station.call_letters}}</h1>
+                <h3>{{station.freq}}</h3>
+            </div>
+            <div class="col-md-2">
+
+                <h3> {{station.format}}</h3>
+                <h3> {{station.owner}}</h3>
+
+            </div>
+            <div class="col-md-4">
+
+                <h3> {{station.phone_number}}</h3>
+            </div>
+
+
+    </div>
+
+
+</div>
+<div style="height:20px;background-color:#D9F0F1">
+</div>
+
+<div id="row-contests" class="row">
+
+    <div class="col-md-12" style="background-color:#2980B9">
+        <h1 style="color:#9A2519">Contests</h4>
+            <h3 style="color:#E74C3C">KROQ</h3>
+        </div>
+        <div class="col-md-12">
+            <div>
+
+                <div id="row-contest-list" >
+                    <p ng-if="vm.loading" class="loading">Loading ...</p>
+                    <div ng-repeat="contest in vm.contests" class="song">
+                        <!-- <img ng-src="{{song.artworkUrl60}}"> -->
+                        <div class="col-md-4">
+                            <h4>{{contest.name}}</h4>
+                        </div>
+                        <div class="col-md-2">
+                            <h3 style="color:orange"> {{contest.eligibility}}+</h3>
+                        </div>
+                        <div class="col-md-2">
+                            <h4 style="color:green">Value: {{contest.arv}}</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>Start Date: {{contest.start_date}}</h5>
+                            <h5>End Date: {{contest.end_date}}</h5>
+                        </div>
+                    </div>
+                </br></br>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

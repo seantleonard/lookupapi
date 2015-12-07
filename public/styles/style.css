@@ -1,0 +1,59 @@
+#right {
+
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+    background-color: #FC6E51;
+    text-align: center;
+    height:150px;
+}
+
+
+#row-num-lookup {
+    background-color: #2C3E50;
+    overflow-y: scroll;
+    color: white;
+    height:250px;
+}
+
+#form-num-lookup {
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-left:30px;
+    padding-right:30px;
+    background-color: #2980B9;
+}
+
+#form-station-lookup {
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-left:30px;
+    padding-right:30px;
+    background-color: #2980B9;
+}
+
+#row-station-lookup {
+    background-color: #2C3E50;
+    height:250px;
+    color: white;
+    padding-top:30px;
+    padding-bottom:30px;
+
+}
+
+
+#row-contests {
+    background-color: #2C3E50;
+    height:400px;
+    color: white;
+}
+
+#row-contest-list {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+body {
+    background-color:#D9F0F1;
+}
