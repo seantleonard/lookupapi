@@ -65,6 +65,6 @@ app.get('/numberclean', function (req, res){
 
 
 
-app.listen('8000')
+app..listen(process.env.PORT || 5000)
 console.log('Magic happens on port 8000');
 exports = module.exports = app;
